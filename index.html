@@ -1,131 +1,187 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Era 21 Group — Logistics Systems</title>
-
-<script src="https://cdn.tailwindcss.com"></script>
-
-<style>
-html { scroll-behavior: smooth; }
-
-.fade-up {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: all 0.8s ease;
-}
-.fade-up.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.glow-orb {
-  animation: float 7s ease-in-out infinite;
-}
-
-.hero-card {
-  animation: float 8s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%,100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Era 21 Group — Logistics Systems + Equipment</title>
+  <meta name="description" content="Era 21 Group is the parent brand behind Era 21 Systems and CargoCool, building software and equipment for modern logistics." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #0B0B0B; }
+    .fade-up {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .float-slow {
+      animation: floatSlow 8s ease-in-out infinite;
+    }
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+  </style>
 </head>
+<body class="text-white">
+  <section class="relative overflow-hidden border-b border-white/10">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(34,197,94,0.12),transparent_28%),radial-gradient(circle_at_70%_20%,rgba(30,58,138,0.20),transparent_30%)]"></div>
+    <div class="absolute left-8 top-24 h-40 w-40 rounded-full bg-[#1E3A8A]/20 blur-3xl float-slow"></div>
+    <div class="absolute right-8 top-10 h-48 w-48 rounded-full bg-[#22C55E]/10 blur-3xl float-slow"></div><div class="relative mx-auto max-w-7xl px-6 py-8">
+  <header class="flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <img src="era21-icon-refined.svg" alt="Era 21 logo" class="h-10 w-10 rounded-xl object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+      <div class="hidden h-10 w-10 items-center justify-center rounded-2xl bg-white/5 ring-1 ring-white/10">
+        <div class="text-lg font-black tracking-tight"><span class="text-[#1E3A8A]">E</span><span class="text-[#22C55E]">21</span></div>
+      </div>
+      <div>
+        <div class="text-lg font-semibold tracking-[0.22em] text-white">ERA 21 GROUP</div>
+        <div class="text-xs uppercase tracking-[0.25em] text-white/45">Parent Brand</div>
+      </div>
+    </div>
+    <nav class="hidden items-center gap-8 text-sm text-white/70 md:flex">
+      <a href="#platform" class="transition hover:text-white">Platform</a>
+      <a href="#products" class="transition hover:text-white">Products</a>
+      <a href="#contact" class="transition hover:text-white">Contact</a>
+    </nav>
+  </header>
 
-<body class="bg-[#0B0B0B] text-white">
+  <div class="grid items-center gap-12 py-20 lg:grid-cols-[1.05fr_0.95fr] lg:py-28">
+    <div class="fade-up">
+      <div class="mb-5 inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.25em] text-white/65">
+        Software, systems, and equipment for modern freight
+      </div>
+      <h1 class="max-w-4xl text-5xl font-black leading-[0.96] tracking-tight sm:text-6xl lg:text-7xl">
+        One parent brand. <br/>Two focused product lines.
+      </h1>
+      <p class="mt-6 max-w-2xl text-lg leading-8 text-white/72">
+        Era 21 Group is the umbrella brand behind <strong>Era 21 Systems</strong> for software and applications, and <strong>Era 21</strong> for CargoCool equipment and physical products.
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="#products" class="rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-black transition hover:scale-[1.02]">Explore Products</a>
+        <a href="#platform" class="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">View Structure</a>
+      </div>
+    </div>
 
-<!-- HERO -->
-<section class="relative border-b border-white/10 overflow-hidden">
+    <div class="relative fade-up">
+      <div class="absolute -inset-8 rounded-[2rem] bg-gradient-to-br from-[#1E3A8A]/20 via-transparent to-[#22C55E]/20 blur-3xl"></div>
+      <div class="relative rounded-[2rem] border border-white/10 bg-white/[0.03] p-5 shadow-2xl shadow-black/40 backdrop-blur-xl">
+        <div class="rounded-[1.5rem] border border-white/10 bg-[#090909] p-5">
+          <div class="flex items-center justify-between border-b border-white/10 pb-4">
+            <div>
+              <div class="text-xs uppercase tracking-[0.24em] text-white/45">Brand structure</div>
+              <div class="mt-2 text-2xl font-bold">Era 21 Group</div>
+            </div>
+            <div class="rounded-full border border-[#22C55E]/30 bg-[#22C55E]/10 px-3 py-1 text-xs font-semibold text-[#8ef0b3]">Active Build</div>
+          </div>
 
-<div class="glow-orb absolute left-10 top-24 h-40 w-40 bg-blue-900/20 rounded-full blur-3xl"></div>
-<div class="glow-orb absolute right-10 top-10 h-48 w-48 bg-green-500/10 rounded-full blur-3xl"></div>
+          <div class="mt-5 space-y-4">
+            <div class="rounded-2xl border border-[#1E3A8A]/30 bg-[#1E3A8A]/10 p-4">
+              <div class="text-sm uppercase tracking-[0.2em] text-[#8fb1ff]">Software / Applications</div>
+              <div class="mt-2 text-xl font-semibold">Era 21 Systems</div>
+              <p class="mt-2 text-sm leading-6 text-white/70">
+                Freight Desk and future software products for dispatch, operations, visibility, and fleet workflows.
+              </p>
+            </div>
 
-<div class="max-w-7xl mx-auto px-6 py-10">
+            <div class="rounded-2xl border border-[#22C55E]/30 bg-[#22C55E]/10 p-4">
+              <div class="text-sm uppercase tracking-[0.2em] text-[#9ef3c1]">Equipment / Physical Products</div>
+              <div class="mt-2 text-xl font-semibold">Era 21</div>
+              <p class="mt-2 text-sm leading-6 text-white/70">
+                CargoCool and future equipment products built for durability, function, and premium product branding.
+              </p>
+            </div>
 
-<!-- NAV -->
-<div class="flex justify-between items-center">
-<div class="flex items-center gap-3">
-<img src="era21-icon-refined.svg" class="h-10 w-10"/>
-<div class="tracking-[0.2em] text-sm font-semibold">ERA 21 GROUP</div>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <div class="text-3xl font-black">1</div>
+                <div class="mt-2 text-sm uppercase tracking-[0.18em] text-white/45">Parent brand</div>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <div class="text-3xl font-black">2</div>
+                <div class="mt-2 text-sm uppercase tracking-[0.18em] text-white/45">Core sub-brands</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="hidden md:flex gap-6 text-sm text-white/70">
-<a href="#products">Products</a>
-<a href="#platform">Platform</a>
-<a href="#contact">Contact</a>
-</div>
-</div>
-
-<!-- HERO CONTENT -->
-<div class="grid lg:grid-cols-2 gap-12 py-20">
-
-<div class="fade-up">
-<h1 class="text-5xl lg:text-7xl font-black leading-tight">
-Software and equipment for the next era of logistics.
-</h1>
-
-<p class="mt-6 text-white/70 text-lg max-w-xl">
-Era 21 Group builds modern logistics infrastructure across software and equipment for real-world operations.
-</p>
-
-<div class="mt-8 flex gap-4">
-<a href="#products" class="bg-white text-black px-6 py-3 rounded-xl font-semibold">
-Explore Products
-</a>
-<a href="#platform" class="border border-white/20 px-6 py-3 rounded-xl">
-View Platform
-</a>
-</div>
-</div>
-
-<!-- UI PREVIEW -->
-<div class="hero-card bg-white/5 border border-white/10 rounded-2xl p-6 fade-up">
-
-<h3 class="text-xl font-bold mb-4">Era 21 Systems — Freight Desk</h3>
-
-<div class="rounded-2xl border border-white/10 bg-[#080808] overflow-hidden">
-
-<div class="flex justify-between p-4 border-b border-white/10">
-<div class="font-semibold">Freight Desk (Era 21 Systems)</div>
-<div class="text-green-400 text-sm">Active</div>
-</div>
-
-<div class="p-4 grid md:grid-cols-3 gap-4">
-
-<div class="bg-white/5 p-4 rounded-xl">
-<div class="text-xs text-white/50">Active Loads</div>
-<div class="text-2xl font-bold mt-1">18</div>
-</div>
-
-<div class="bg-white/5 p-4 rounded-xl">
-<div class="text-xs text-white/50">Drivers</div>
-<div class="text-2xl font-bold mt-1">9</div>
+  </section>  <section id="platform" class="mx-auto max-w-7xl px-6 py-20">
+    <div class="grid gap-6 md:grid-cols-3">
+      <div class="fade-up rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-7 shadow-lg shadow-black/20">
+        <div class="mb-4 h-2 w-16 rounded-full bg-gradient-to-r from-[#1E3A8A] to-[#22C55E]"></div>
+        <h3 class="text-2xl font-bold tracking-tight">Era 21 Group</h3>
+        <p class="mt-4 text-base leading-7 text-white/68">The umbrella company identity that unifies software, applications, and equipment under one premium brand platform.</p>
+      </div>
+      <div class="fade-up rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-7 shadow-lg shadow-black/20">
+        <div class="mb-4 h-2 w-16 rounded-full bg-gradient-to-r from-[#1E3A8A] to-[#22C55E]"></div>
+        <h3 class="text-2xl font-bold tracking-tight">Era 21 Systems</h3>
+        <p class="mt-4 text-base leading-7 text-white/68">The software and application side of the business, including Freight Desk and future digital logistics systems.</p>
+      </div>
+      <div class="fade-up rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-7 shadow-lg shadow-black/20">
+        <div class="mb-4 h-2 w-16 rounded-full bg-gradient-to-r from-[#1E3A8A] to-[#22C55E]"></div>
+        <h3 class="text-2xl font-bold tracking-tight">Era 21</h3>
+        <p class="mt-4 text-base leading-7 text-white/68">The product-facing identity for CargoCool and future physical products, equipment, and branded hardware.</p>
+      </div>
+    </div>
+  </section>  <section id="products" class="border-y border-white/10 bg-white/[0.02]">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <div class="max-w-2xl fade-up">
+        <div class="text-sm uppercase tracking-[0.24em] text-white/45">Products</div>
+        <h2 class="mt-4 text-4xl font-black tracking-tight sm:text-5xl">A cleaner, clearer brand structure.</h2>
+        <p class="mt-5 text-lg leading-8 text-white/70">
+          This setup gives you a strong parent brand, a dedicated software division, and a direct product-facing identity for equipment.
+        </p>
+      </div><div class="mt-12 grid gap-6 lg:grid-cols-3">
+    <div class="fade-up group rounded-[1.75rem] border border-white/10 bg-[#0d0d0d] p-7 transition hover:-translate-y-1 hover:border-white/20">
+      <div class="text-xs uppercase tracking-[0.22em] text-white/45">Parent</div>
+      <h3 class="mt-3 text-2xl font-bold">Era 21 Group</h3>
+      <p class="mt-4 text-base leading-7 text-white/68">The corporate and strategic brand that owns and organizes the broader business.</p>
+      <div class="mt-8 h-px w-full bg-gradient-to-r from-[#1E3A8A] via-white/10 to-[#22C55E]"></div>
+    </div>
+    <div class="fade-up group rounded-[1.75rem] border border-white/10 bg-[#0d0d0d] p-7 transition hover:-translate-y-1 hover:border-white/20">
+      <div class="text-xs uppercase tracking-[0.22em] text-white/45">Software</div>
+      <h3 class="mt-3 text-2xl font-bold">Freight Desk</h3>
+      <p class="mt-4 text-base leading-7 text-white/68">Freight Desk sits under Era 21 Systems as the primary application for dispatch, operations, and fleet workflows.</p>
+      <div class="mt-8 h-px w-full bg-gradient-to-r from-[#1E3A8A] via-white/10 to-[#22C55E]"></div>
+    </div>
+    <div class="fade-up group rounded-[1.75rem] border border-white/10 bg-[#0d0d0d] p-7 transition hover:-translate-y-1 hover:border-white/20">
+      <div class="text-xs uppercase tracking-[0.22em] text-white/45">Equipment</div>
+      <h3 class="mt-3 text-2xl font-bold">CargoCool</h3>
+      <p class="mt-4 text-base leading-7 text-white/68">CargoCool lives under Era 21 as a branded product line for physical truck equipment and future hardware products.</p>
+      <div class="mt-8 h-px w-full bg-gradient-to-r from-[#1E3A8A] via-white/10 to-[#22C55E]"></div>
+    </div>
+  </div>
 </div>
 
-<div class="bg-white/5 p-4 rounded-xl">
-<div class="text-xs text-white/50">Revenue</div>
-<div class="text-2xl font-bold mt-1">$6.4K</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- FEATURES -->
-<section id="platform" class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-3 gap-6">
-
-<div class="bg-white/5 p-6 rounded-2xl border border-white/10 fade-up">
-<h3 class="text-xl font-bold">Era 21 Systems</h3>
-<p class="mt-3 text-white/70">Software platform for dispatch, drivers, and operations.</p>
-</div>
-
-<div class="bg-white/5 p-6 rounded-2xl border border-white/10 fade-up">
-<h3 class="
+  </section>  <section id="contact" class="border-t border-white/10 bg-[#090909]">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <div class="fade-up rounded-[2rem] border border-white/10 bg-white/[0.03] p-8 md:p-12">
+        <div class="max-w-3xl">
+          <div class="text-sm uppercase tracking-[0.24em] text-white/45">Get started</div>
+          <h2 class="mt-4 text-4xl font-black tracking-tight sm:text-5xl">Build the future of logistics under one brand system.</h2>
+          <p class="mt-5 text-lg leading-8 text-white/70">
+            Launch Era 21 Group with a structure that clearly separates software, systems, and physical product branding from day one.
+          </p>
+        </div>
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a href="mailto:hello@era21.co" class="rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-black transition hover:scale-[1.02]">Contact Era 21 Group</a>
+          <a href="#platform" class="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">Review Brand Structure</a>
+        </div>
+      </div>
+    </div>
+  </section>  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-up').forEach((el) => observer.observe(el));
+  </script></body>
+</html>
